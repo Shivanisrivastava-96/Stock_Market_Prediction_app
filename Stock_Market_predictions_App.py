@@ -11,15 +11,15 @@ import streamlit as st
 import yfinance as yf
 import pandas as pd
 import numpy as np
+from sklearn.metrics import mean_squared_error
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import LSTM, Dense, Dropout
+from tensorflow.keras import backend as K   
 import plotly.express as px
 import plotly.graph_objects as go
 from statsmodels.tsa.stattools import adfuller
 from statsmodels.tsa.seasonal import seasonal_decompose
-from sklearn.preprocessing import MinMaxScaler
-from sklearn.metrics import mean_squared_error
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import LSTM, Dense, Dropout
-from tensorflow.keras import backend as K    
+from sklearn.preprocessing import MinMaxScaler 
 import matplotlib.pyplot as plt
 import statsmodels.api as sm
 # Title
